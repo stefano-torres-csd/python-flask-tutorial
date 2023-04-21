@@ -32,7 +32,7 @@ ITEMS = [
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html')
+  return render_template('home.html', items=ITEMS)
 
 
 if __name__ == "__main__":
